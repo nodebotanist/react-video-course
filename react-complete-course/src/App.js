@@ -9,7 +9,8 @@ const App = (props) => {
       {name:"Max", age: 28},
       {name: "Manu", age:26},
       {name: "Stephanie", age: 27}
-    ]
+    ],
+    otherState: 'some other state'
   })
 
   const switchNameHandler = () => {
@@ -18,7 +19,8 @@ const App = (props) => {
         {name:"Maxamillian", age: 28},
         {name:"Manu", age:26},
         {name:"Stephanie", age:26}
-      ]
+      ],
+      otherState: personsState.otherState // This will be LOST othervise as this method doesn't merge but replaces the old state
     })
   }
 

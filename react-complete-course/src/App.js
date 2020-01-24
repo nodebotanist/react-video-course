@@ -13,6 +13,10 @@ const App = (props) => {
     otherState: 'some other state'
   })
 
+  // instead of having one large object in one useState() call, you can use multiple useStote() calls
+  // to handle multiple pieces of state
+  const [otherState, setOtherState] = useState('some other state')
+
   const switchNameHandler = () => {
     setPersonsState({
       Persons: [
